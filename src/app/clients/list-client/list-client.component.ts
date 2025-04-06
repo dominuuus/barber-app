@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { IClienteService } from '../../../services/api-client/clients/iclients.service';
 import { SERVICES_TOKEN } from '../../../services/service.tokes';
-import { ClientService } from '../../../services/api-client/clients/clients.service';
+import { ClientsService } from '../../../services/api-client/clients/clients.service';
 
 @Component({
   selector: 'app-list-client',
@@ -9,7 +9,7 @@ import { ClientService } from '../../../services/api-client/clients/clients.serv
   templateUrl: './list-client.component.html',
   styleUrl: './list-client.component.scss',
   providers: [
-      {provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientService}
+      {provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientsService}
     ]
 })
 export class ListClientComponent {

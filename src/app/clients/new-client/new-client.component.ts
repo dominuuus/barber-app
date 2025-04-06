@@ -1,7 +1,7 @@
 import { Component, Inject, OnDestroy } from '@angular/core';
 import { IClienteService } from '../../../services/api-client/clients/iclients.service';
 import { SERVICES_TOKEN } from '../../../services/service.tokes';
-import { ClientService } from '../../../services/api-client/clients/clients.service';
+import { ClientsService } from '../../../services/api-client/clients/clients.service';
 import { ClientFormComponent } from "../components/client-form/client-form.component";
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
@@ -15,7 +15,7 @@ import { SnackbarManagerService } from '../../../services/snackbar-manager.servi
   templateUrl: './new-client.component.html',
   styleUrl: './new-client.component.scss',
   providers: [
-    {provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientService},
+    {provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientsService},
     {provide: SERVICES_TOKEN.SNACKBAR, useClass: SnackbarManagerService}
   ]
 })
