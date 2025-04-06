@@ -42,8 +42,8 @@ O projeto está organizado em dois diretórios principais, ambos neste mesmo rep
 ## 💡 Aprendizados e Desafios
 "Através da trilha, pude ter a experiência de realizar a integração de uma aplicação com front e back end. Minha experiência era mais frequente com o Front e aprender Java na Trilha foi muito essencial."
 
+-- Aplicação funcionando
+![alt text](barber-app-ui/src/app/assets/img/Barbearia.gif)
 
 ## 🙋‍♀️ Contribuição
 Contribuições são bem-vindas! Fique à vontade para abrir issues, forks ou pull requests.
-
-![alt text](barber-app-ui/src/app/assets/img/Barbearia.gif)
