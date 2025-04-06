@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { IClienteService } from "./iclients.service";
+import { IClientService } from "./iclients.service";
 import { Observable } from "rxjs";
 import { SaveClientRequest, UpdateClientResponse, ListClientResponse, DetailClientResponse, SaveClientResponse } from "./client.model";
 import { HttpClient } from "@angular/common/http";
@@ -9,7 +9,7 @@ import { environment } from "../../../environment/environment";
     providedIn: 'root'
 })
 
-export class ClientsService implements IClienteService {
+export class ClientsService implements IClientService {
 
     private readonly basePath = environment.apiUrl
 

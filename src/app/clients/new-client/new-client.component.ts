@@ -1,5 +1,5 @@
 import { Component, Inject, OnDestroy } from '@angular/core';
-import { IClienteService } from '../../../services/api-client/clients/iclients.service';
+import { IClientService } from '../../../services/api-client/clients/iclients.service';
 import { SERVICES_TOKEN } from '../../../services/service.tokes';
 import { ClientsService } from '../../../services/api-client/clients/clients.service';
 import { ClientFormComponent } from "../components/client-form/client-form.component";
@@ -23,7 +23,7 @@ export class NewClientComponent implements OnDestroy {
 
   private HttpSubscription?: Subscription
 
-  constructor(@Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: IClienteService,
+  constructor(@Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: IClientService,
               @Inject(SERVICES_TOKEN.SNACKBAR) private readonly snackBarManager: ISnackbarManagerService,
               private readonly router: Router) {}
 
