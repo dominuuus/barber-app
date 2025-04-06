@@ -40,8 +40,10 @@ O projeto está organizado em dois diretórios principais, ambos neste mesmo rep
 <video controls src="barber-app-ui/src/app/assets/img/barbearia-front-back.mp4" title="Vídeo do Barber-App funcionando"></video>
 
 ## 💡 Aprendizados e Desafios
-"Através da trilha, pude ter a experiência de realizar a integração de uma aplicação com front e back end. Minha experiência era mais frequente com o Front e aprender Java na Trilha foi muito essencial. Precisei recorrer a outros materiais para completar o entendimento sobre a aplicação e as funcionalidades."
+"Através da trilha, pude ter a experiência de realizar a integração de uma aplicação com front e back end. Minha experiência era mais frequente com o Front e aprender Java na Trilha foi muito essencial."
 
 
 ## 🙋‍♀️ Contribuição
 Contribuições são bem-vindas! Fique à vontade para abrir issues, forks ou pull requests.
+
+![alt text](barber-app-ui/src/app/assets/img/Barbearia.gif)
