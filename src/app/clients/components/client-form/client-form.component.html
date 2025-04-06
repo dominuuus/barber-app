@@ -5,7 +5,7 @@
                 <mat-label>Nome</mat-label>
                 <input matInput name="name" id="name" #nameModel="ngModel" [(ngModel)]="client.name" required>
                 @if (nameModel.hasError('required')){
-                <mat-error>Informe o nome do client</mat-error>
+                <mat-error>Informe o nome do cliente</mat-error>
                 }
             </mat-form-field>
         </div>
@@ -17,7 +17,7 @@
                     <input matInput name="email" id="email" #emailModel="ngModel" [(ngModel)]="client.email" required
                         email>
                     @if (nameModel.hasError('required') || nameModel.hasError('email')){
-                    <mat-error>Informe um email válido para o cliente</mat-error>
+                    <mat-error>Digite um email válido</mat-error>
                     }
                 </mat-form-field>
             </div>
@@ -27,7 +27,7 @@
                     <input matInput name="phone" id="phone" #phoneModel="ngModel" [(ngModel)]="client.phone" required
                         mask="(00) 00000-0000">
                     @if (nameModel.hasError('required') || nameModel.hasError('mask')){
-                    <mat-error>Informe o nome do client</mat-error>
+                    <mat-error>Informe um número de telefone</mat-error>
                     }
                 </mat-form-field>
             </div>
