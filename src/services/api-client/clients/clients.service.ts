@@ -9,15 +9,16 @@ import { environment } from "../../../environment/environment";
     providedIn: 'root'
 })
 
-export class ClientService implements IClienteService {
+export class ClientsService implements IClienteService {
 
     private readonly basePath = environment.apiUrl
 
     constructor(private http: HttpClient) {}
+
     save(request: SaveClientRequest): Observable<SaveClientRequest> {
         return this.http.post<SaveClientResponse>(`${this.basePath}clients`, request);
     }
-    updade(id: number, request: UpdateClientResponse): Observable<UpdateClientResponse> {
+    update(id: number, request: UpdateClientResponse): Observable<UpdateClientResponse> {
         return this.http.put<UpdateClientResponse>(`${this.basePath}clients/${id}`, request);
     }
     delete(id: number): Observable<void> {
